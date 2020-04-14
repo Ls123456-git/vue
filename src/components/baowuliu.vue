@@ -9,6 +9,18 @@
         <span>设置人</span>
         <el-input placeholder="请输入内容" v-model="input" clearable></el-input>
       </div>
+       <div class="search-item">
+        <span>设置人</span>
+        <el-input placeholder="请输入内容" v-model="input" clearable></el-input>
+      </div>
+       <div class="search-item">
+        <span>设置人</span>
+        <el-input placeholder="请输入内容" v-model="input" clearable></el-input>
+      </div>
+       <div class="search-item">
+        <span>设置人</span>
+        <el-input placeholder="请输入内容" v-model="input" clearable></el-input>
+      </div>
       <el-input v-model="input" placeholder="请输入内容"></el-input>
       <el-button type="primary" style="width:100px;" @click="Search">新增</el-button>
       <el-button type="primary" style="width:100px;" @click="Search">启用</el-button>
