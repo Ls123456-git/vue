@@ -27,6 +27,11 @@ export default new Router({
       path: '/lian',
       name: 'Lian',
       component: Lian
+    },
+    {
+      path: '/yian',
+      name: 'Lian',
+      component: Lian
     }
   ]
 })
