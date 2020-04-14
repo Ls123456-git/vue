@@ -27,6 +27,15 @@
         <el-input v-model="input" placeholder="请输入内容" suffix-icon="el-icon-search"></el-input>
       </div>
     </div>
+    <div class="block">
+      <span class="demonstration">hover 触发子菜单</span>
+      <el-cascader
+        v-model="value"
+        :options="options"
+        :props="{ expandTrigger: 'hover' }"
+        @change="handleChange"
+      ></el-cascader>
+    </div>
     <div class="main" style="position: relative;"></div>
     <el-tabs v-model="activeName">
       <el-tab-pane label="传统电商" name="first" :key="'first'">
@@ -129,7 +138,6 @@ h2 {
   padding-bottom: 15px;
   display: flex;
   justify-content: space-around;
-  
 }
 .search-item {
   display: inline-block;

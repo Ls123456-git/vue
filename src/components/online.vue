@@ -18,6 +18,15 @@
     <button @click="goto()">baojia</button>
     <button @click="goup()">up</button>
     <button @click="gun()">ui</button>
+    <div class="block">
+      <span class="demonstration">hover 触发子菜单</span>
+      <el-cascader
+        v-model="value"
+        :options="options"
+        :props="{ expandTrigger: 'hover' }"
+        @change="handleChange"
+      ></el-cascader>
+    </div>
   </div>
 </template>
 <script>
@@ -152,14 +161,14 @@ export default {
 
   computed: {},
   methods: {
-    goto(){
-      this.$router.push("./Baojia")
+    goto() {
+      this.$router.push("./Baojia");
     },
-    goup(){
-      this.$router.push("./upload")
+    goup() {
+      this.$router.push("./upload");
     },
-     gun(){
-      this.$router.push("./lian")
+    gun() {
+      this.$router.push("./lian");
     },
     // 表格创建完成后执行
     onGridReady(params) {
